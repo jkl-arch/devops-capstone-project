@@ -15,10 +15,10 @@ from flask_cors import CORS
 app = Flask(__name__)
 app.config.from_object(config)
 
-#create instance of talisman class
+# create instance of talisman class
 talisman = Talisman(app)
 
-#create cors class 
+# create cors class
 CORS(app)
 # Import the routes After the Flask app is created
 # pylint: disable=wrong-import-position, cyclic-import, wrong-import-order
